@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+textarea
+{
+resize:none;
+}
+form
+{
+padding:10px;
+line-height:3.5rem;
+}
+table,th,td
+{
+  border: 1px solid black;
+}
+</style>
+<script>
+function display()
+{   
+ const signup=document.querySelector('input');
+ console.log(signup);
+}
+</script>
+</head>
+<body>
+    <form>
+        <label>First Name:</label>  
+      <input type="text"/> 
+       <label>Last Name:</label>
+       <input type="text"/>
+        <div>
+        <label>Address:</label> 
+        <textarea rows="2" cols="20"></textarea>
+        </div>
+        <div>
+       <label>Pincode:</label>
+       <input type="text">   
+       </div>
+      <div>  
+        <label for="male">Please Select the Gender</label>  
+      <input type="radio" id="male" name="gender" value="male">Male
+      <input type="radio" id="Female" name="gender" value="Female">Female   
+      </div>
+      <div>  
+        <label>Choice of Food</label>
+      <select id="food" multiple>
+      <option value="Dosa">Dosa</option>
+      <option value="Chapptti">Chapptti</option> 
+      <option value="Idly">Idly</option>  
+      <option value="Poori">Poori</option>
+      <option value="Ven Pongal">Ven Pongal</option>  
+      </select>
+    </div>
+    <div>
+         <label>State:</label>   
+         <select>
+         <option value="0">Select State</option>
+        <option value='Tamil Nadu'>Tamil Nadu</option>
+        <option value='Karnataka'>Karnataka</option>
+        <option value='Uttar Pradesh'>Uttar Pradesh</option>
+        <option value='Kerala'>Kerala</option>
+        <option value='Rajasthan'>Rajasthan</option>
+    </select>
+    </div>
+<div>
+<label>Country</label>
+<select>
+    <option value="2">Select Country</option>
+        <option value='India'>India</option>
+        <option value='Germany'>Germany</option>
+        <option value='Afganishatan'>Afganishatan</option>
+        <option value='Beligium'>Beligium</option>
+        <option value='Colombia'>Colombia</option>
+</select>
+</div>
+<button onclick="display()">OnSubmit</button>
+      </form>
+       <table style="width:100%">
+    <tr>   
+    <th>First Name</th>
+    <th>Last Name</th> 
+    <th>Address</th>
+    <th>Pin Code</th>
+    <th>Gender</th>
+    <th>Food</th>
+    <th>State</th>
+    <th>Country</th>    
+    </tr>
+</table>  
+</body>
+</html>
